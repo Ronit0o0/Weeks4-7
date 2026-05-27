@@ -15,8 +15,8 @@ public class TankMover : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        bool isMovingRight = Keyboard.current.rightArrowKey.wasPressedThisFrame;
-        bool isMovingLeft = Keyboard.current.leftArrowKey.wasPressedThisFrame;
+        bool isMovingRight = Keyboard.current.rightArrowKey.isPressed;
+        bool isMovingLeft = Keyboard.current.leftArrowKey.isPressed;
 
         if (isMovingRight)
         {
