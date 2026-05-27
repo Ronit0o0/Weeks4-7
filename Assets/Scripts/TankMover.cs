@@ -1,4 +1,5 @@
 using UnityEngine;
+using UnityEngine.InputSystem;
 
 public class TankMover : MonoBehaviour
 {
@@ -14,8 +15,8 @@ public class TankMover : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        bool isMovingRight = Input.GetKey(KeyCode.RightArrow);
-        bool isMovingLeft = Input.GetKey(KeyCode.LeftArrow);
+        bool isMovingRight = Keyboard.current.rightArrowKey.wasPressedThisFrame;
+        bool isMovingLeft = Keyboard.current.leftArrowKey.wasPressedThisFrame;
 
         if (isMovingRight)
         {
