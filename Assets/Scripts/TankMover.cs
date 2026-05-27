@@ -20,11 +20,11 @@ public class TankMover : MonoBehaviour
 
         if (isMovingRight)
         {
-            transform.Translate(Vector3.right * speed * Time.deltaTime);
+            transform.position += Vector3.right * speed * Time.deltaTime;
         }
         else if (isMovingLeft)
         {
-            transform.Translate(Vector3.right * -speed * Time.deltaTime);
+            transform.position += Vector3.right * -speed * Time.deltaTime;
         }
 
         if (transform.position.x > xMax)
