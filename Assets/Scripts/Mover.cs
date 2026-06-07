@@ -1,13 +1,16 @@
 using UnityEngine;
 using UnityEngine.InputSystem;
+using UnityEngine.UI;
 
 public class Mover : MonoBehaviour
 {
     public float speed = 5;
     public GameObject Player2;
-
-    public SpriteRenderer spriteRenderer;
     public float distanceThreshold;
+    public Image chatBox;
+    public Sprite customSprite;
+    public Canvas canvas;
+    
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
@@ -35,13 +38,13 @@ public class Mover : MonoBehaviour
 
         if (distance < distanceThreshold)
         {
-            spriteRenderer.color = Color.red;
-            Debug.Log("Player 1 is close to Player 2!");
-            
+            chatBox.sprite = customSprite;
+            chatBox.transform.position = new Vector3(canvas.transform.position.x, canvas.transform.position.y, 0);
         }
 
-
-
-
+        if (distance > distanceThreshold)
+        {
+            chatBox.transform.position = new Vector3(1000, 1000, 0);
+        }
     }
 }

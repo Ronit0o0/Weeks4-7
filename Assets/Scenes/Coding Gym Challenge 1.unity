@@ -203,6 +203,17 @@ GameObject:
   m_CorrespondingSourceObject: {fileID: 4830557866626762741, guid: 1daa59ecd53edf04183da13e3b621205, type: 3}
   m_PrefabInstance: {fileID: 5361232153557503246}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &887983784 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 1061776040153181263, guid: 9e99f6d6ed67b71429c3408fc5c05240, type: 3}
+  m_PrefabInstance: {fileID: 1682016735629656537}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: UnityEngine.UI::UnityEngine.UI.Image
 --- !u!1 &1296599667
 GameObject:
   m_ObjectHideFlags: 0
@@ -399,6 +410,10 @@ PrefabInstance:
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 1061776040153181263, guid: 9e99f6d6ed67b71429c3408fc5c05240, type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 21300000, guid: e60a70b5852829645972836565f57a35, type: 3}
+    - target: {fileID: 1061776040153181263, guid: 9e99f6d6ed67b71429c3408fc5c05240, type: 3}
       propertyPath: m_UseSpriteMesh
       value: 0
       objectReference: {fileID: 0}
@@ -435,9 +450,41 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 689692997}
     - target: {fileID: 3660312165788874353, guid: 9e99f6d6ed67b71429c3408fc5c05240, type: 3}
+      propertyPath: chatBox
+      value: 
+      objectReference: {fileID: 887983784}
+    - target: {fileID: 3660312165788874353, guid: 9e99f6d6ed67b71429c3408fc5c05240, type: 3}
+      propertyPath: customSprite
+      value: 
+      objectReference: {fileID: 21300000, guid: e9e6cd7843baf5745bd5d09a6e86b077, type: 3}
+    - target: {fileID: 3660312165788874353, guid: 9e99f6d6ed67b71429c3408fc5c05240, type: 3}
+      propertyPath: customColor.a
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3660312165788874353, guid: 9e99f6d6ed67b71429c3408fc5c05240, type: 3}
+      propertyPath: customColor.b
+      value: 0.6698113
+      objectReference: {fileID: 0}
+    - target: {fileID: 3660312165788874353, guid: 9e99f6d6ed67b71429c3408fc5c05240, type: 3}
+      propertyPath: customColor.g
+      value: 0.6698113
+      objectReference: {fileID: 0}
+    - target: {fileID: 3660312165788874353, guid: 9e99f6d6ed67b71429c3408fc5c05240, type: 3}
+      propertyPath: customColor.r
+      value: 0.6698113
+      objectReference: {fileID: 0}
+    - target: {fileID: 3660312165788874353, guid: 9e99f6d6ed67b71429c3408fc5c05240, type: 3}
       propertyPath: spriteRenderer
       value: 
       objectReference: {fileID: 1747579641}
+    - target: {fileID: 3660312165788874353, guid: 9e99f6d6ed67b71429c3408fc5c05240, type: 3}
+      propertyPath: chatBoxPosition.x
+      value: -7.37
+      objectReference: {fileID: 0}
+    - target: {fileID: 3660312165788874353, guid: 9e99f6d6ed67b71429c3408fc5c05240, type: 3}
+      propertyPath: chatBoxPosition.y
+      value: 0.11
+      objectReference: {fileID: 0}
     - target: {fileID: 3660312165788874353, guid: 9e99f6d6ed67b71429c3408fc5c05240, type: 3}
       propertyPath: distanceThreshold
       value: 2
