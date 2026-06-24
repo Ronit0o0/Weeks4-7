@@ -948,6 +948,8 @@ MonoBehaviour:
   timerText: {fileID: 1162728207}
   flyPrefab: {fileID: 2083250072941676713, guid: 3d092dea8f554814ea9a3bc2af752f66, type: 3}
   mover: {fileID: 1595881316}
+  deathTimer: 1
+  flyPrefabSpawned: {fileID: 2083250072941676713, guid: 3d092dea8f554814ea9a3bc2af752f66, type: 3}
 --- !u!212 &2004031799
 SpriteRenderer:
   m_ObjectHideFlags: 0
