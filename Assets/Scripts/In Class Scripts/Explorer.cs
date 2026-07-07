@@ -50,7 +50,7 @@ public class Explorer : MonoBehaviour
 
             if (timer < timerGoal)
             {
-                health -= 10S * Time.deltaTime;
+                health -= 10 * Time.deltaTime;
             }
         }
 
