@@ -10,10 +10,11 @@ public class Numbers : MonoBehaviour
     void Start()
     {
         float number = startValue;
-
+        Debug.Log(number);
         for (int i = 0; i < iterations; i++)
         {
             number *= multiplier;
+            Debug.Log(number);
         }
 
         number /= divisor;

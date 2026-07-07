@@ -8,8 +8,13 @@ public class Strategies : MonoBehaviour
     {
         for (int i = 0; i < 10; i++)
         {
-            Instantiate(prefab, new Vector3 (0, i/10, 0), Quaternion.identity);
+            Debug.Log(i);
+            float spawnHeight = i / 10f;
+            Debug.Log(i);
+            Vector3 spawningPosition = new Vector3(0, i / 10f, 0);
+            Instantiate(prefab, spawningPosition, Quaternion.identity);
+            Debug.Log(spawningPosition);
         }
     }
-
+    
 }
