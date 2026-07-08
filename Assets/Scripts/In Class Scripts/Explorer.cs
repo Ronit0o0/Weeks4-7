@@ -9,7 +9,9 @@ public class Explorer : MonoBehaviour
     
     bool onIce = false;
     float timer = 0f;
-    float timerGoal = 5f;
+    float timerGoalLava = 3f;
+    
+    float timerGoalIce = 5f;
 
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
@@ -48,10 +50,10 @@ public class Explorer : MonoBehaviour
         {
             timer += Time.deltaTime;
 
-            if (timer < timerGoal)
+            if (timer < timerGoalIce)
             {
                 speed = 0f;
-            } else if (timer > timerGoal)
+            } else if (timer > timerGoalIce)
             {
                 speed = 3f;
             }
@@ -63,7 +65,7 @@ public class Explorer : MonoBehaviour
         {
             timer += Time.deltaTime;
 
-            if (timer < timerGoal)
+            if (timer < timerGoalLava)
             {
                 health -= 10 * Time.deltaTime;
             }
