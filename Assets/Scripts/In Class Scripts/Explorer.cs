@@ -6,6 +6,8 @@ public class Explorer : MonoBehaviour
     public float health;
     public float speed;
     bool inLava = false;
+    
+    bool onIce = false;
     float timer = 0f;
     float timerGoal = 5f;
 
@@ -42,7 +44,20 @@ public class Explorer : MonoBehaviour
             directionToMove.y -= 1f;
         }
 
-        
+        if(onIce)
+        {
+            timer += Time.deltaTime;
+
+            if (timer < timerGoal)
+            {
+                speed = 0f;
+            } else if (timer > timerGoal)
+            {
+                speed = 3f;
+            }
+            Debug.Log(timer);
+        }
+
 
         if (inLava)
         {
@@ -82,4 +97,12 @@ public class Explorer : MonoBehaviour
     {
         inLava = false;
     }
+
+    public void OnIce()
+    {
+        onIce = true;
+        
+    }
+
+
 }
